@@ -17,12 +17,14 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    //add workbox plugins for service worker and manifest file
     plugins: [
+      //webpack plugin generates html file and injects bundles
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Text Editor'
       }),
-
+      //custom manifest.json file
       new InjectManifest ({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
@@ -48,7 +50,7 @@ module.exports = () => {
       }),
       
     ],
-
+    //css loaders to webpack
     module: {
       rules: [
         {
@@ -58,6 +60,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
+          //adding babeil-loader
           use: {
             loader: "babel-loader",
             options: {
