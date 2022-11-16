@@ -24,6 +24,7 @@ This program can be run through a browser using the link to the the deployed app
 ## Heroku
 
 Here is the link to Heroku: https://hidden-tor-71129.herokuapp.com/
+![screenshot of app](./client/Screen%20Shot%202022-11-16%20at%205.58.22%20PM.png)
 
 ## About
 My name is Donniecia Corke and I am currently taking a Full Stack Web Development bootcamp. My github is @dnecia. You can also reach me at my email donnieciamc@gmail.com
